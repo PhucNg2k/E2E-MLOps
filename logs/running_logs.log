@@ -1,9 +1,18 @@
-[2025-03-08 16:06:52,303: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
-[2025-03-08 16:06:52,303: INFO: common: yaml file: config\config.yaml loaded successfully]
-[2025-03-08 16:06:52,303: INFO: common: yaml file: params.yaml loaded successfully]
-[2025-03-08 16:06:52,303: INFO: common: created directory at: artifacts]
-[2025-03-08 16:06:52,310: INFO: common: created directory at: artifacts/data_ingestion]
-[2025-03-08 16:07:01,830: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1MAsJlQRcOoq48g5T6j9NVjp-X5ghlImJ/view?usp=drive_link into file artifacts/data_ingestion/data.zip, size ~56301 KB]
-[2025-03-08 16:07:02,246: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+[2025-03-08 18:20:32,186: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-03-08 18:20:32,187: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-08 18:20:32,188: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-08 18:20:32,189: INFO: common: created directory at: artifacts]
+[2025-03-08 18:20:32,189: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-03-08 18:20:41,813: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1MAsJlQRcOoq48g5T6j9NVjp-X5ghlImJ/view?usp=drive_link into file artifacts/data_ingestion/data.zip, size ~56301 KB]
+[2025-03-08 18:20:42,278: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-03-08 18:20:42,279: INFO: main: >>>>>> stage Prepare Base Model stage started <<<<<<]
+[2025-03-08 18:20:42,280: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-08 18:20:42,281: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-08 18:20:42,281: INFO: common: created directory at: artifacts]
+[2025-03-08 18:20:42,281: INFO: common: created directory at: artifacts/prepare_base_model]
+[2025-03-08 18:20:42,603: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-03-08 18:20:42,824: INFO: main: >>>>>> stage Prepare Base Model stage completed <<<<<<
 
 x==========x]

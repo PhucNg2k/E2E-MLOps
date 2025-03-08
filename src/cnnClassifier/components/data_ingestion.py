@@ -1,6 +1,6 @@
 import os
 import urllib.request as request
-import zipfile
+from zipfile import ZipFile
 import gdown
 from cnnClassifier import logger
 from pathlib import Path
@@ -33,7 +33,7 @@ class DataIngestion:
         try: 
             unzip_path = self.config.unzip_dir
             os.makedirs(unzip_path, exist_ok=True)
-            with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+            with ZipFile(self.config.local_data_file, 'r') as zip_ref:
                 zip_ref.extractall(unzip_path)
         except Exception as e:
             raise e    
