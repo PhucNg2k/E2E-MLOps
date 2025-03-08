@@ -8,7 +8,7 @@ __version__ = "0.0.0"
 
 REPO_NAME = "E2E-MLOps"
 AUTHOR_USER_NAME = "PhucNg2k"
-SRC_REPO = "cnn-classifier"
+SRC_REPO = "cnnClassifier"
 AUTHOR_EMAIL = "putinphuc@gmail.com"
 
 

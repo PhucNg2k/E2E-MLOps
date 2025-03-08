@@ -16,4 +16,4 @@ scipy
 Flask
 Flask-Cors
 gdown
--e .
+-e . # Install local package in editable mode using setup.py

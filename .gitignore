@@ -1,4 +1,3 @@
-src/cnn_classifier.egg-info/dependency_links.txt
-src/cnn_classifier.egg-info/PKG-INFO
-src/cnn_classifier.egg-info/SOURCES.txt
-src/cnn_classifier.egg-info/top_level.txt
+src/cnnClassifier.egg-info
+test.py
+src/cnnClassifier/__pycache__
