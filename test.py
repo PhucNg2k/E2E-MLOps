@@ -1,33 +1,11 @@
-from box import ConfigBox, BoxError
-from ensure import ensure_annotations, EnsureError
+import tensorflow as tf
 
-@ensure_annotations
-def add( x: int, y: int):
-    return x + y
+print("TensorFlow Version:", tf.__version__)
+print("Num GPUs Available:", len(tf.config.list_physical_devices('GPU')))
+print("GPU Devices:", tf.config.list_physical_devices('GPU'))
+print("Is TensorFlow built with CUDA?", tf.test.is_built_with_cuda())
+print("Is TensorFlow built with GPU support?", tf.test.is_built_with_gpu_support())
 
+print(tf.sysconfig.get_build_info()["cuda_version"])
+print(tf.sysconfig.get_build_info()["cudnn_version"])
 
-
-add(3, 3)
-
-try:
-    add( 3, 3.2)
-except EnsureError as e:
-    print(e)
-
-
-d = {
-    "key": 123,
-    "key1": 456
-}
-
-print(d['key'])
-
-d = ConfigBox(d)
-try:    
-    print(d.key)
-    print(d.key2)
-except BoxError as e:
-    print(e)
-    raise AttributeError("key is not in dict")
-except AttributeError as e:
-    print(e)
